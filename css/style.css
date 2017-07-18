@@ -245,3 +245,7 @@ margin-left:auto;
 margin-right:auto;
 text-align:left;
 }
+.center_iframe{
+display: block;
+margin: 0px auto;
+}
