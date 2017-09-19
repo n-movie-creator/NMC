@@ -2,6 +2,8 @@
 <html>
 
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <meta charset=”UTF-8″ />
     <title>N Movie Creator</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -35,7 +37,25 @@
                 }
             });
         });
-    </script>
+</script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  $("#toggle").click(function(){
+    $("#menu").slideToggle();
+    return false;
+  });
+  $(window).resize(function(){
+    var win = $(window).width();
+    var p = 480;
+    if(win > p){
+      $("#menu").show();
+    } else {
+      $("#menu").hide();
+    }
+  });
+});
+</script>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 
     <meta name="twitter:card" content="summary" />
@@ -46,15 +66,16 @@
 </head>
 
 <body>
-    <div id="fixedBox" class="nav">
-        <div class="menu-wrap">
-            <nav class="menu">
+        <div id="fixedBox" class="nav">
                 <ul class="clearfix">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#scroll_2">About</a></li>
-                    <li><a href="#scroll_3">Member</a></li>
-                    <li><a href="#scroll_4">Movie</a></li>
-                    <li><a href="#scroll_5">Connect</a></li>
+<div id="menu-box">
+  <div id="toggle"><a href="">menu</a></div>
+  <ul id="menu" class="">
+    <li><a href="#">top</a></li>
+    <li><a href="#scroll_2">about</a></li>
+    <li><a href="#scroll_3">member</a></li>
+    <li><a href="#scroll_4">movie</a></li>
+    <li><a href="#scroll_5">connect</a></li>
                 </ul>
             </nav>
         </div>
@@ -67,7 +88,7 @@
             <div class="outer">
                 <div class="inner">
                     <div class='box'>
-                        <img src="img/32.png" id="center-image" />
+                        <div class="sp_contents"><img src="img/32.png" id="center-image" />
                     </div>
                 </div>
             </div>

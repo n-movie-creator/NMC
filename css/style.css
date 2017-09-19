@@ -70,94 +70,87 @@ body {
     clear:both;
 }
  
-/*----- Menu Outline -----*/
-.menu-wrap {
-    width:100%;
-    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
-    background:#565656;
+#menu{
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;  
 }
- 
-.menu {
+#menu li{
+  display: block;
+  float: left;
+  width: 20%;
+  margin: 0;
+  padding: 0; }
+#menu li a{
+  display: block;
+  padding: 12px 0 10px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+#menu li a:hover{
+  background: #444;
+}
+#toggle{ 
+ display: none;
+}
+@media only screen and (max-width: 768px) {
+    #menu li{
+    width: 25%;
+    border-bottom: 1px solid #444;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #menu{
+    display: none;
+  }
+  #menu li{
+    width: 100%;
+  }
+  #toggle{
+    display: block;
     position: relative;
-    width:1000px;
-    margin:0px auto;
-    z-index: 5;
-}
- 
-.menu li {
-    margin:0px;
-    list-style:none;
-    font-family:'Ek Mukta';
-}
- 
-.menu a {
-    transition:all linear 0.15s;
-    color:#ffffff;
-}
- 
-.menu li:hover > a, .menu .current-item > a {
-    text-decoration:none;
-    color:#ffffff;
-}
- 
-.menu .arrow {
-    font-size:11px;
-    line-height:0%;
-}
- 
-/*----- Top Level -----*/
-.menu > ul > li {
-    float:none;
-    display:inline-block;
-    position:relative;
-    font-size:19px;
-}
- 
-.menu > ul > li > a {
-    padding:10px 40px;
-    display:inline-block;
-    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
-}
- 
-.menu > ul > li:hover > a, .menu > ul > .current-item > a {
-    background:#2e2728;
-}
- 
-/*----- Bottom Level -----*/
-.menu li:hover .sub-menu {
-    z-index:1;
-    opacity:1;
-}
- 
-.sub-menu {
-    width:160%;
-    padding:5px 0px;
-    position:absolute;
-    top:100%;
-    left:0px;
-    z-index:-1;
-    opacity:0;
-    transition:opacity linear 0.15s;
-    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
-    background:#2e2728;
-}
- 
-.sub-menu li {
-    display:block;
-    font-size:16px;
-}
- 
-.sub-menu li a {
-    padding:10px 30px;
-    display:block;
-}
- 
-.sub-menu li a:hover, .sub-menu .current-item a {
-    background:#3e3436;
-}
-body{
-  background: #000;
-  animation: fadeIn 2s ease 0s 1 normal;
+    width: 100%;
+    background: #222;
+  }
+  #toggle a{
+    display: block;
+    position: relative;
+    padding: 12px 0 10px;
+    border-bottom: 1px solid #444;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+  }
+  #toggle:before{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background: #fff;
+  }
+  #toggle a:before, #toggle a:after{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 20px;
+    height: 4px;
+    background: #222;
+  }
+  #toggle a:before{
+    margin-top: -6px;
+  }
+  #toggle a:after{
+    margin-top: 2px;
+  }
 }
 @keyframes fadeIn {
     0% {opacity: 0}
@@ -248,4 +241,9 @@ text-align:left;
 .center_iframe{
 display: block;
 margin: 0px auto;
+}
+  
+  
+@media screen and (max-width:375px) {
+.pc_contents {display:none;} /*横幅375px以下では表示しない*/
 }
