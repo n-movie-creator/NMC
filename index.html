@@ -2,318 +2,304 @@
 <html>
 
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-    <meta charset=”UTF-8″ />
-    <title>N Movie Creator</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.js"></script>
-    <style>
-        #wrapper {
-            width: 500px;
-            height: 500px;
-            line-height: 500px;
-            /* heightと同じ値 */
-            text-align: center;
-            vertical-align: middle;
-        }
-
-        #center-image {
-            vertical-align: middle;
-        }
-    </style>
-    <script type="text/javascript">
-        jQuery(function () {
-            var nav = jQuery('.nav');
-            var navTop = nav.offset().top;
-            jQuery(window).scroll(function () {
-                var winTop = jQuery(this).scrollTop();
-                if (winTop >= navTop) {
-                    nav.addClass('fixed')
-                } else if (winTop <= navTop) {
-                    nav.removeClass('fixed')
-                }
-            });
-        });
-</script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script type="text/javascript">
-$(function(){
-  $("#toggle").click(function(){
-    $("#menu").slideToggle();
-    return false;
-  });
-  $(window).resize(function(){
-    var win = $(window).width();
-    var p = 480;
-    if(win > p){
-      $("#menu").show();
-    } else {
-      $("#menu").hide();
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <meta charset=”UTF-8″ />
+  <title>N Movie Creator</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.js"></script>
+  <style>
+    #wrapper {
+      width: 500px;
+      height: 500px;
+      line-height: 500px;
+      /* heightと同じ値 */
+      text-align: center;
+      vertical-align: middle;
     }
-  });
-});
-</script>
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@N_Movie_Creator" />
-    <meta name="twitter:title" content="N Movie Creator" />
-    <meta name="twitter:description" content="NMCの公式ウェブサイト" />
-    <meta name="twitter:image" content="https://pbs.twimg.com/media/C9VAm3yUMAAWORj.jpg" />
+    #center-image {
+      vertical-align: middle;
+    }
+  </style>
+  </script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("#toggle").click(function () {
+        $("#menu").slideToggle();
+        return false;
+      });
+      $(window).resize(function () {
+        var win = $(window).width();
+        var p = 480;
+        if (win > p) {
+          $("#menu").show();
+        } else {
+          $("#menu").hide();
+        }
+      });
+    });
+  </script>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@N_Movie_Creator" />
+  <meta name="twitter:title" content="N Movie Creator" />
+  <meta name="twitter:description" content="NMCの公式ウェブサイト" />
+  <meta name="twitter:image" content="https://pbs.twimg.com/media/C9VAm3yUMAAWORj.jpg" />
 </head>
 
 <body>
-        <div id="fixedBox" class="nav">
-                <ul class="clearfix">
-<div id="menu-box">
-  <div id="toggle"><a href="">menu</a></div>
-  <ul id="menu" class="">
-    <li><a href="#">top</a></li>
-    <li><a href="#scroll_2">about</a></li>
-    <li><a href="#scroll_3">member</a></li>
-    <li><a href="#scroll_4">movie</a></li>
-    <li><a href="#scroll_5">connect</a></li>
-                </ul>
-            </nav>
+  <div id="fixedBox" class="nav fixed">
+    <ul class="clearfix">
+      <div id="menu-box">
+        <div id="toggle"><a href="">menu</a></div>
+        <ul id="menu" class="">
+          <li><a href="#">top</a></li>
+          <li><a href="#scroll_2">about</a></li>
+          <li><a href="#scroll_3">member</a></li>
+          <li><a href="#scroll_4">movie</a></li>
+          <li><a href="#scroll_5">connect</a></li>
+        </ul>
+        </nav>
+      </div>
+  </div>
+  </div>
+  </div>
+  </section>
+  <main>
+    <div class="cd-fixed-bg cd-bg-1">
+      <div class="outer">
+        <div class="inner">
+          <div class='box'>
+            <div class="sp_contents"><img src="img/32.png" id="center-image" />
+            </div>
+          </div>
         </div>
+      </div>
+      </section>
+    </div>
+    <div class="cd-scrolling-bg cd-color-1 text">
+      <div class="cd-container">
+        <p>
+          <div id="scroll_2">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <section class="fadein">
+              <div class="outer">
+                <div class="inner">
+                  <h1>NMC About</h1>
+                </div>
+              </div>
+              <br>
+              <div class="outer">
+                <div class="inner">
+                  <h3>NMCことN Movie Creatorは角川ドワンゴ学園N高等学校の公認同好会です。<br> NMCのモットー、最終的な目標は「一人ひとりをMovie Creatorにする」<br> 一人ひとりの個性を伸ばし、成長させて行くことによって自分を誇ることの出来る
+                    <br> Creatorになって欲しいと言う願いも込めたモットーです
+                    <br>
+                  </h3>
+                </div>
+              </div>
+              <div class="inner">
+                <img src="img/34.JPG" alt="member">
+              </div>
+          </div>
+      </div>
+      </section>
+
+      </p>
     </div>
     </div>
+    </div>
+    <div class="cd-fixed-bg cd-bg-3">
+    </div>
+
+    <div class="cd-scrolling-bg cd-color-3 text">
+      <div class="cd-container">
+        <p>
+          <div id="scroll_3"></div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <section class="fadein">
+            <div class="outer">
+              <div class="inner">
+                <h1>NMC Members</h1>
+              </div>
+            </div>
+            <br>
+            <div class="outer">
+              <div class="inner">
+                <h3>・パンダ 《会長》 ・タルメイロ 《副会長》 ・のどあめ 《副会長》<br> ・えむけー《書記》・sho 《会計》・waricoma 《システム管理》<br> and more members...
+                </h3>
+              </div>
+            </div>
+            <div class="inner">
+              <img src="img/33.jpg" alt="member">
+            </div>
+      </div>
     </div>
     </section>
-    <main>
-        <div class="cd-fixed-bg cd-bg-1">
+
+    </p>
+    </div>
+    </div>
+    </div>
+    <div class="cd-fixed-bg cd-bg-4">
+    </div>
+
+    <div class="cd-scrolling-bg cd-color-4 text">
+      <div class="cd-container">
+        <p>
+          <div id="scroll_4"></div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <section class="fadein">
             <div class="outer">
-                <div class="inner">
-                    <div class='box'>
-                        <div class="sp_contents"><img src="img/32.png" id="center-image" />
-                    </div>
+              <div class="inner">
+                <h1>NMC Movie</h1>
+              </div>
+            </div>
+            <br>
+            <br>
+            <div class="outer">
+              <div class="inner">
+                <iframe class="center_iframe" width="660" height="415" src="https://www.youtube.com/embed/Kf9HmRfP-6A?rel=0" frameborder="0"
+                  allowfullscreen></iframe>
+                <div class="iframe">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/coxR6pRhmI4?rel=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/nyObtd40Ejo?rel=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
                 </div>
+                <div class="iframe">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/cQU2LcLUSIs?rel=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Plt25lzZox8?rel=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                </div>
+                <div class="iframe">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/BhCVNzr5IbM?rel=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/uWDhrDP-Zdk?rel=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                </div>
+              </div>
             </div>
-        </div>
-        </section>
-        </div>
-        <div class="cd-scrolling-bg cd-color-1 text">
-            <div class="cd-container">
-                <p>
-                    <div id="scroll_2">
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <section class="fadein">
-                            <div class="outer">
-                                <div class="inner">
-                                    <h1>NMC About</h1>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="outer">
-                                <div class="inner">
-                                    <h3>NMCことN Movie Creatorは角川ドワンゴ学園N高等学校の公認同好会です。<br> NMCのモットー、最終的な目標は「一人ひとりをMovie Creatorにする」<br>                                        一人ひとりの個性を伸ばし、成長させて行くことによって自分を誇ることの出来る
-                                        <br> Creatorになって欲しいと言う願いも込めたモットーです
-                                        <br>
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="inner">
-                                <img src="img/34.JPG" alt="member">
-                            </div>
-                    </div>
-            </div>
-            </section>
-
-            </p>
-        </div>
-        </div>
-        </div>
-        <div class="cd-fixed-bg cd-bg-3">
-        </div>
-
-        <div class="cd-scrolling-bg cd-color-3 text">
-            <div class="cd-container">
-                <p>
-                    <div id="scroll_3"></div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <section class="fadein">
-                        <div class="outer">
-                            <div class="inner">
-                                <h1>NMC Members</h1>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="outer">
-                            <div class="inner">
-                                <h3>・パンダ 《会長》 ・タルメイロ 《副会長》 ・のどあめ 《副会長》<br> ・えむけー《書記》・sho 《会計》・waricoma 《システム管理》<br> and more
-                                    members...
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="inner">
-                            <img src="img/33.jpg" alt="member">
-                        </div>
-            </div>
-        </div>
-        </section>
+          </section>
 
         </p>
-        </div>
-        </div>
-        </div>
-        <div class="cd-fixed-bg cd-bg-4">
-        </div>
-
-        <div class="cd-scrolling-bg cd-color-4 text">
-            <div class="cd-container">
-                <p>
-                    <div id="scroll_4"></div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <section class="fadein">
-                        <div class="outer">
-                            <div class="inner">
-                                <h1>NMC Movie</h1>
-                            </div>
-                        </div>
-                        <br>
-                        <br>
-                        <div class="outer">
-                            <div class="inner">
-                                <iframe class="center_iframe" width="660" height="415" src="https://www.youtube.com/embed/Kf9HmRfP-6A?rel=0" frameborder="0"
-                                    allowfullscreen></iframe>
-                                <div class="iframe">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/coxR6pRhmI4?rel=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nyObtd40Ejo?rel=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
-                                </div>
-                                <div class="iframe">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cQU2LcLUSIs?rel=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Plt25lzZox8?rel=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
-                                </div>
-                                <div class="iframe">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BhCVNzr5IbM?rel=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uWDhrDP-Zdk?rel=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                </p>
+      </div>
+    </div>
+    <div class="cd-fixed-bg cd-bg-5">
+    </div>
+    <div class="cd-scrolling-bg cd-color-2 text">
+      <div class="cd-container">
+        <p>
+          <div id="scroll_5"></div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <section class="fadein">
+            <div class="outer">
+              <div class="inner">
+                <h1>NMC Connect</h1>
+                <br>
+                <br>
+              </div>
             </div>
-        </div>
-        <div class="cd-fixed-bg cd-bg-5">
-        </div>
-        <div class="cd-scrolling-bg cd-color-2 text">
-            <div class="cd-container">
-                <p>
-                    <div id="scroll_5"></div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <section class="fadein">
-                        <div class="outer">
-                            <div class="inner">
-                                <h1>NMC Connect</h1>
-                                <br>
-                                <br>
-                            </div>
-                        </div>
-                        <div class="outer">
-                            <div class="inner">
-                                <ul class="flex-container">
-                                    <a href="https://n-highschool.slack.com/messages/C1R6N67A7" target="_blank">
-                                        <div class="morph pic"><img src="img/35.png"></div>
-                                        <p>　 　　　</p>
-                                    </a>
-                                    <a href="http://com.nicovideo.jp/community/co3472683" target="_blank">
-                                        <div class="morph pic"><img src="img/36.png"></div>
-                                        <p>　　　　　</p>
-                                    </a>
-                                    <a href="https://twitter.com/N_Movie_Creator" target="_blank">
-                                        <div class="morph pic"><img src="img/37.png"></div>
-                                        <p>　　　　　</p>
-                                    </a>
-                                    <a href="https://www.youtube.com/channel/UC8MTFxOwbsLtkzM-tQHXH4Q" target="_blank">
-                                        <div class="morph pic"><img src="img/38.png"></div>
-                                    </a>
-                                    <a href="https://goo.gl/forms/yJRJf4xrsV5UtDFR2" target="_blank">
-                                        <div class="morph pic"><img src="img/40.png"></div>
-                                    </a>
-                                    <p>
-                                </ul>
-                                <br>
-                                <br>
-                                <h1>活動記録</h1>
-                                <div class="box2">
-                                    <br> 2017年7月19日、文化祭2017の振り返り映像がニコニコ動画に投稿された
-                                </div>
-                                <div class="box2">
-                                    <br> 2017年7月18日、文化祭2017の振り返り映像がYoutubeに投稿された
-                                </div>
-                                <div class="box2">
-                                    <br> 2017年4月30日、閉会式にて、文化祭2017の振り返り映像が放送された！
-                                </div>
-                                <div class="box2">
-                                    <br> 2017年4月29日、N高等学校文化祭2017の開会式にて、ファンファーレ映像が放送された！
-                                </div>
-                                <div class="box2">
-                                    <br> 2017年4月15日、文化祭実行委員会から、開会式で流すファンファーレ映像の編集を依頼される
-                                </div>
-                                <div class="box2">
-                                    <br> 2017年3月29日、文化祭閉会式で流す振り返り映像の制作に着手。<br>撮影する場所と時間を決めて作戦を立てたり、モーショングラフィックスの作成を行う。
-                                </div>
-                                <div class="box2">
-                                    <br> 2017年2月27日に、同好会名をN Movie Creator に変更。生放送を同好会の活動から外し、<br>動画制作をメインに活動することにした。<br>
-                                </div>
-                                <div class="box2">
-                                    <br> 2017年2月15日から同好会の活動内容を見直す議論が行われるようになる
-                                </div>
-                                <div class="box2">
-                                    <br> 2017年2月上旬に、文化祭実行委員会から、同好会として何か発表しないか打診がくる
-                                </div>
-                                <div class="box2">
-                                    <br> 2016年9月から2017年2月まで、同好会員でゲームをし2017年2月まで、<br>同好会員でゲームをしてる様子をニコニコ生放送で配信したり<br>Skypeで通話をしたりして楽しく遊んでいた。
-                                </div>
-                                <div class="box2">
-                                    <br> 2016年9月12日 N Live Movie Teamとして同好会設立<br>
-                                </div>
-                                <div class="box2">
-                                    <br>2016年9月9日 同好会を申請する
-                                </div>
-                                <div class="box2">
-                                    <br>2016年7月13日 Slackのチャンネルを作成
-                                </div>
+            <div class="outer">
+              <div class="inner">
+                <ul class="flex-container">
+                  <a href="https://n-highschool.slack.com/messages/C1R6N67A7" target="_blank">
+                    <div class="morph pic"><img src="img/35.png"></div>
+                    <p>　 　　　</p>
+                  </a>
+                  <a href="http://com.nicovideo.jp/community/co3472683" target="_blank">
+                    <div class="morph pic"><img src="img/36.png"></div>
+                    <p>　　　　　</p>
+                  </a>
+                  <a href="https://twitter.com/N_Movie_Creator" target="_blank">
+                    <div class="morph pic"><img src="img/37.png"></div>
+                    <p>　　　　　</p>
+                  </a>
+                  <a href="https://www.youtube.com/channel/UC8MTFxOwbsLtkzM-tQHXH4Q" target="_blank">
+                    <div class="morph pic"><img src="img/38.png"></div>
+                  </a>
+                  <a href="https://goo.gl/forms/yJRJf4xrsV5UtDFR2" target="_blank">
+                    <div class="morph pic"><img src="img/40.png"></div>
+                  </a>
+                  <p>
+                </ul>
+                <br>
+                <br>
+                <h1>活動記録</h1>
+                <div class="box2">
+                  <br> 2017年7月19日、文化祭2017の振り返り映像がニコニコ動画に投稿された
+                </div>
+                <div class="box2">
+                  <br> 2017年7月18日、文化祭2017の振り返り映像がYoutubeに投稿された
+                </div>
+                <div class="box2">
+                  <br> 2017年4月30日、閉会式にて、文化祭2017の振り返り映像が放送された！
+                </div>
+                <div class="box2">
+                  <br> 2017年4月29日、N高等学校文化祭2017の開会式にて、ファンファーレ映像が放送された！
+                </div>
+                <div class="box2">
+                  <br> 2017年4月15日、文化祭実行委員会から、開会式で流すファンファーレ映像の編集を依頼される
+                </div>
+                <div class="box2">
+                  <br> 2017年3月29日、文化祭閉会式で流す振り返り映像の制作に着手。<br>撮影する場所と時間を決めて作戦を立てたり、モーショングラフィックスの作成を行う。
+                </div>
+                <div class="box2">
+                  <br> 2017年2月27日に、同好会名をN Movie Creator に変更。生放送を同好会の活動から外し、<br>動画制作をメインに活動することにした。<br>
+                </div>
+                <div class="box2">
+                  <br> 2017年2月15日から同好会の活動内容を見直す議論が行われるようになる
+                </div>
+                <div class="box2">
+                  <br> 2017年2月上旬に、文化祭実行委員会から、同好会として何か発表しないか打診がくる
+                </div>
+                <div class="box2">
+                  <br> 2016年9月から2017年2月まで、同好会員でゲームをし2017年2月まで、<br>同好会員でゲームをしてる様子をニコニコ生放送で配信したり<br>Skypeで通話をしたりして楽しく遊んでいた。
+                </div>
+                <div class="box2">
+                  <br> 2016年9月12日 N Live Movie Teamとして同好会設立<br>
+                </div>
+                <div class="box2">
+                  <br>2016年9月9日 同好会を申請する
+                </div>
+                <div class="box2">
+                  <br>2016年7月13日 Slackのチャンネルを作成
+                </div>
 
 
 
 
-                                <br>
-                                </p>
-                                <h3>
-                                    <br>
-                                </h3>
-                            </div>
-                        </div>
-                    </section>
-
+                <br>
                 </p>
+                <h3>
+                  <br>
+                </h3>
+              </div>
             </div>
-        </div>
-    </main>
-    <div id="particles-js"></div>
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
+          </section>
+
+        </p>
+      </div>
+    </div>
+  </main>
+  <div id="particles-js"></div>
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
 
 </body>
 
